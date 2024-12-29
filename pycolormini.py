@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushBut
 from PyQt5.QtGui import QColor, QPalette
 from PyQt5.QtCore import Qt
 
-class ColorPaletteGenerator(QWidget):
+class PyColorMini(QWidget):
     def __init__(self):
         super().__init__()
         self.init_ui()
@@ -70,6 +70,6 @@ class ColorPaletteGenerator(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = ColorPaletteGenerator()
+    window = PyColorMini()
     window.show()
     sys.exit(app.exec_())
